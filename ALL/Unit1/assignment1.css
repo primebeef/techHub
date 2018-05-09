@@ -1,0 +1,124 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight:300;
+    
+    background-color:#7180AC;
+    color:#F5EDF0;
+}
+h1{
+    text-align:center;
+   font-family: 'Euphoria Script', cursive;
+
+    
+}
+.viewer{
+    position:relative;
+    width:300px;
+    height:450px;
+    display:inline-block;
+    text-align:center;
+    margin:1.5%;
+}
+.desco{
+    position:relative;
+    text-align:center;
+     background-color:#404A68;
+    width:100%;
+    z-index:-1;
+    border:3px solid #404A68;
+    border-radius:20px;
+}
+.images{
+    position:relative;
+    top: 0;
+  left: 0;
+}
+.galpic{
+    top: 0;
+  left: 0;
+  
+    position:relative;
+    cursor:pointer;
+    width:300px;
+    height:400px;
+    background-color:#69747C;
+    transition:.5s ease;
+    overflow:hidden;
+    border:3px solid #F5EDF0 ;
+    border-radius:20px;
+    transition:5s;
+}
+.hidpic{
+    top: 0;
+  left: 0;
+  z-index:-1;
+     position:absolute;
+    cursor:pointer;
+    width:300px;
+    height:400px;
+    background-color:#69747C;
+    transition:.5s ease;
+    overflow:hidden;
+    border:3px solid #F5EDF0 ;
+    border-radius:20px;
+   
+}
+
+#head{ position:fixed;
+    width:100%;
+    background-color:#404A68;
+    z-index:2;
+}
+
+#gallery{
+    position:absolute;
+    top:15%;
+    text-align:center;
+    width:100%;
+   
+    
+}
+.galpic:hover{
+opacity:0;    
+}
+img{
+    background-color:#F5EDF0;
+}
+table{ position:relative;
+    border:2px solid #F5EDF0;
+    text-align:center;
+    left:30%;
+    width:40%;
+    
+}
+td,th{
+    border:2px solid #F5EDF0; 
+}
+th{
+    background-color:#404A68;
+}
+a:link, a:visited { 
+    color:#F5EDF0;
+    text-decoration: none;
+    cursor: auto;
+    
+}
+
+a:link:active, a:visited:active { 
+    color:#F5EDF0;
+}
+ul{
+    visibility:hidden;
+}
+#slogan{ position:relative;
+     opacity:0;
+    cursor:pointer;
+     padding:0;
+     margin:0;
+}
+#slogan:active{
+    opacity:1;
+    cursor:pointer;
+ 
+}

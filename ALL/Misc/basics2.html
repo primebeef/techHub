@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+  Advanced Web Programming 
+  Assignment: 
+  Name: 
+-->
+<title></title>
+<style>
+</style>
+<script>
+function checkForID(){
+        var i = 0;
+        var solve = false;
+        var checker = Dirx_Human[i][0]
+        while(solve == false){
+    if(checker == speaker1){
+        
+        var r = checker
+ LOCdatax = i
+                                return r;
+    solve = true                            
+    }
+   else if(Dirx_Human.length < i){
+       var r = undefined
+                                return r;
+   }
+   i++
+}
+}
+    function checkForID_name(){
+        var i = 0
+        var quest = false
+        while((i <= Dirx_Human[LOCdatax].length)&&(quest == false)){
+    if(Dirx_Human[LOCdatax][1]!= undefined){
+        quest = true
+        var r = ((Dirx_Human[LOCdatax][1].first))
+        alert(r)
+    return r;
+    break;
+         }
+         i++
+    
+}
+    }
+    
+</script>
+</head>
+<body>
+    <script>
+        var speakid = [
+    "Davey Jones",
+    "Super Man",
+    "LJ Shearer",
+    "Jessica Jones",
+    "Jon Snow",
+    ]
+    </script>
+    <script>
+        function rand(){
+    var rand = Math.floor(Math.random() * (speakid.length));
+    return rand;
+}
+    </script>
+    <script>
+        function capNoun(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+    </script>
+<script>
+    var Dirx_Human = [
+    
+            [   
+                "MAKENNA_TURNER",
+                Name =
+                {
+                    first:"Makenna", last:"Turner",
+                    
+                },
+                Basic_Info =
+                {
+                BDate:"04/03/2002",     
+                },
+            ]
+            
+    
+        ]
+</script>
+
+<script>
+//document.write(Dirx_Human[0][0]);
+
+    var speaker = prompt("Hello, who am I speaking to?", speakid[rand()]);
+    speaker = speaker.toUpperCase();
+speaker1 = speaker.replace(/ +/g, "_");
+//document.write(speaker1);
+ var check = checkForID();
+ 
+ switch (speaker1){
+     case check:
+         var who = checkForID_name();
+    alert("Welcome Home, " +who +".")
+    
+         break;
+         //case speaker1:
+    //var if_human = confirm("Are you a human?")
+    case "nope":
+             
+             break;
+    default:
+    var if_human = confirm("Are you a human?");
+    
+    break;
+ }
+    /*
+    if(if_human == true){
+        function infoGen(){
+       var startpoint =  (Dirx_Human.length + 1);
+       var fullname = speaker.split(" ")
+       var fname = capNoufullname[0]
+       var lname = fullname[1]
+       var BMonth = prompt("What MONTH were you born?","00")
+       var BDay = prompt("What DAY were you born?","00")
+       var BYear = prompt("What YEAR were you born?","0000")
+       var BD = BDay+"/"+BMonth+"/"+BYear
+       Dirx_Human[startpoint] = {
+           [   
+                speaker1,
+                Name =
+                {
+                    first: fname, last:lname,
+                    
+                },
+                Basic_Info =
+                {
+                BDate: BD,     
+                },
+            ]
+       }
+       
+        }
+        infoGen();
+    } */
+        
+ /*
+ if(speaker1 == check){
+     alert("Equal")
+ }
+or(var i = 0; i <= Dirx_Human.length; i++){
+         if(Dirx_Human[i][0]==speaker1){
+        alert("Welcome back "+Dirx_Human[i])
+         }
+    
+}
+var i = 0;
+var check = null;
+while(i <= Dirx_Human.length){
+    if(Dirx_Human[i][0]==speaker1){
+        alert("Welcome back "+Dirx_Human[i])
+         }
+    i++
+}
+*/
+// Dirx_Human[0][1]Name.first
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

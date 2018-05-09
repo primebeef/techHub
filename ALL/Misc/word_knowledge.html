@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EX1</title>
+<!--This code is part of a system for word retainment and phrase recognition-->
+<style>
+</style>
+<script>
+// Keystone variables
+var toggle =null
+var queue =null
+</script>
+<script>
+    function REFINE(que){
+var pl = que.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g,"");
+var fs = pl.replace(/\s{2,}/g," ");
+fs = fs.toUpperCase();
+return fs;
+    }
+</script>
+<!--<script>
+    var QREF = [
+    
+            [   
+                "WHAT IS YOUR NAME",
+                ANS =
+                ["Kylon the Surveyor"]
+                //Equivalents and references
+                },
+            ]
+            
+    
+        ]
+</script>
+-->
+</head>
+<body>
+    <!--
+  1. Make a toggle switch using a loop and function.
+        *Start in loop with toggle for confirmation, "would you like to continue?".
+        If yes, then re run loop with next input.
+        
+        fIND INDEX OF REF,
+        USEINDEX FOR REF ANS REBOOT.
+    -->
+    
+<script>
+Continue();
+  function Continue(){
+        toggle = confirm("Would you like to continue?");
+        if (toggle == true){
+          queue = prompt("Could you ask me a question?"); 
+          queue = REFINE(queue);
+          alert(queue)
+          toggle = false;
+       }
+        
+      
+        
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

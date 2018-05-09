@@ -1,0 +1,121 @@
+html,body{
+    padding:0;
+    margin:0;
+    color:snow;
+    
+}
+#form{
+  font-family:'Lato', sans-serif;  
+}
+label{
+    font-size:17px;
+}
+input[type=text],input[type=password] , select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #586BA4;
+    border-radius: 1px;
+    box-sizing: border-box;
+
+    
+}
+input[type=text],input[type=password] {
+    background-color: #586BA4;
+    color: white;
+}
+input[type=submit], input[type=reset]{
+    width: 100%;
+    background-color: #85BDBF;
+    color: snow;
+    padding: 20px;
+    margin: 14px 0px 0px 0px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    
+    font-size: 20px;
+    
+}
+input[type=submit]#signup {
+    width: 100%;
+    background-color: #FF8484;
+    color: snow;
+    padding: 20px 20px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+   font-size:20px;
+    
+}
+input[type=submit]:hover#signup {
+    
+    background-color: #E85A66;
+    
+    
+    
+}
+input[type=submit]:select#signup{
+   background-color: #FF8484;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #4B4E54;
+}
+input[type=submit]:hover {
+    
+    opacity:.8;
+    
+    
+}
+textarea {
+    position:relative;
+    width:100%;
+font-family: 'Lato', sans-serif;
+ font-size:20px;  
+ background-color:#586BA4;
+ border-radius:1px;
+ border:none;
+ color:snow;
+}
+div.form{
+    
+    background-color: #324376;
+    padding: 20px;
+    color:snow;
+    font-family: 'Lato', sans-serif;
+
+}
+.inputs{
+   
+    user-select:none;
+}
+
+#logheader{
+    padding-bottom:20px;
+   
+}
+input[type=radio]:checked ~ .check {
+  border: 5px solid #0DFF92;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+table{
+    border-collapse:collapse;
+    border:1px solid black;
+    text-align:center;
+    margin:auto;
+    padding:3px;
+    float:left;
+}
+::-webkit-input-placeholder{
+   color:snow; 
+}

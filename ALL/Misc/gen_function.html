@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+</style>
+
+</head>
+<body>
+    <script>
+var greet = ["my friend!"];
+
+function rand(){
+    var rand = Math.floor(Math.random() * 1);
+    return rand;
+}
+    </script>
+    <script>
+        function capNoun(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+    </script>
+    <script>
+var human_record;   
+        function genVar(){
+  human_record = [];
+
+  for (var i = 0; i <= 20; ++i) {
+      human_record[i] = null;
+      
+  }
+
+  return human_record;
+}
+    </script>
+<script>
+genVar();
+var new_human = 0;
+var do1 = false
+while(do1 == false){
+var name = prompt("What is your name?","Makenna");
+var name = name.toUpperCase();
+var say;
+switch(name){
+    case "MAKENNA":
+        var name1 = name.toLowerCase()
+    say = "Hello there "+ capNoun(name1)+", "+ greet[rand()];
+    alert(say)
+        break;
+        
+    default:
+    var if_human = confirm("Are you a human?");
+    if( if_human == true){
+        var name1 = name.toLowerCase()
+        name1 = capNoun(name1);
+        human_record[new_human] = {NameID:name, firstName:name1, Age:20};
+
+            new_human = new_human + 1;
+    }
+    break;
+        
+
+}
+
+                        do1 = true    
+}
+document.write(human_record[0].firstName)
+</script>
+</body>
+</html>

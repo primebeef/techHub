@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+</head>
+<body>
+    <script>
+       //Some global variables that will contain the application state
+        var cw = 640;
+        var ch = 480;
+        var cSize = (cw / 3);
+        // Setup will happen when the webpage is first loaded
+        function setup(){
+            createCanvas(cw,ch);
+        }
+        
+        // Draw will happen continuously
+        function draw(){
+            // Draw a Colorado flag
+            // Start with the rectangles
+            var blueColor = color(0,32,91);
+            fill(blueColor);
+            rect(0,0,cw,ch / 3);
+            
+            fill(color(255,255,255));
+            rect(0,ch/3,cw,ch / 3);
+            
+            fill(blueColor);
+            rect(0,(ch/3)*2,cw,ch / 3);
+            
+            // Draw red c
+            var redColor = color(200,16,46);
+            noFill();
+            strokeWeight(100);
+            stroke(redColor);
+            arc(cSize,ch-cSize,cSize, cSize,.25*PI,1.75*PI);
+            noStroke();
+            // Draw yellow circle
+            var yellowColor = color(255,199,44);
+            fill(yellowColor);
+            ellipse(cSize,ch - cSize, cSize - 100, cSize - 100);
+            
+            // Play with interaction--let's draw a responsive cursor
+            colorOne = color(50,255,50);
+            colorTwo = color(255,50,255);
+             
+                if(mouseIsPressed){
+                    fill(colorOne);
+                }
+                else{
+                    fill(colorTwo);
+                }
+                
+                ellipse(mouseX,mouseY,80,80);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

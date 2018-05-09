@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="basic_library.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+<title></title>
+<script>
+var timer = -1
+var timer1 = -1
+var pause;
+var hr = 0
+function Start(){
+    if ((timer == -1) || (pause == -1)){
+        timer = setInterval("basicMinute()",60000);
+        timer1 = setInterval("basicSecond()",1000);
+    }
+   
+    
+}
+function Stop(){
+    if ((timer != -1) || (pause == -1)) {
+        clearInterval(timer)
+        clearInterval(timer1)
+        timer = -1
+        timer1= -1
+        setText('minute',"00")
+        setText('second',"00")
+        setText('hour',"00")
+    }
+ 
+}
+function Pause(){
+    if (timer != -1){
+        clearInterval(timer)
+        timer = -1
+        pause = -1
+        var y = getText('minute')
+        setText('minute',y)
+        clearInterval(timer1)
+        var x = getText('second')
+        setText('second',x)
+    } 
+}
+
+    function basicMinute(){
+        var min = getText('minute')
+        min = parseInt(min)
+        min = min + 1
+        if(min<10){
+            
+            setText('minute',"0"+min)
+        }
+        else if(min>59){
+            
+            hr = hr + 1
+            setText('minute',"00")
+            setText('hour',hr)
+        }
+        else{
+        setText('minute',min)
+        }
+    }
+   function basicSecond(){
+       var sec = getText('second')
+        sec = parseInt(sec)
+        sec = sec + 1
+        if(sec<10){
+             setText('second',"0"+sec)
+        }
+        else if(sec==60){
+            setText('second',"00")
+        }
+        else{
+        setText('second',sec)
+        }
+   }
+</script>
+<style>
+html,body {
+    padding:0%;
+    margin:0%;
+}
+#timeblock {
+    position:absolute;
+    left:2%;
+    top:2%;
+    font-family: 'Coiny', cursive;
+    padding:1%;
+    background-color:#53131E;
+        text-align:center;
+        min-width:300px;
+     color:#FFFEF7;  
+     text-shadow: 0px 1px darkgrey;
+     border-radius:10px;
+
+}
+div.timetitle { position:relative;
+    margin:auto;
+    font-size:30px
+}
+#timer {
+    user-select:none;
+}
+.button {
+    position:relative;
+    display:inline-block;
+    
+    border-radius:10px;
+    margin:3%;
+    padding:15px;
+    transition:.3s ease;
+    background:#5A464C;
+    color:#FFFEF7;
+    user-select:none;
+    cursor:pointer;
+    font-size:12px;
+    min-width:40px;
+    max-width:40px;
+    height:20px;
+    text-align:center;
+}
+.button:active{
+    background:#595358; 
+}
+</style>
+</head>
+<body>
+<div id="timeblock">
+<div class="timetitle">Timer <br><span id="hour">00</span> : <span id="minute">00</span> : <span id="second">00</span></div>
+<div class="button" onclick="Start()">START</div>
+<div class="button" onclick="Pause()">PAUSE</div>
+<div class="button" onclick="Stop()">RESET</div>
+</div>
+</body>
+</html>

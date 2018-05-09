@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jeuryr </title>
+<link rel='stylesheet' type='text/css' href='mycss.css'>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jeuryr </title>
+<link rel='stylesheet' type='text/css' href='mycss.css'>
+</head>
+<body>

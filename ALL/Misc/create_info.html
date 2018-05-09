@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+</style>
+<script>
+ var human_record = genVar();
+        function genVar(){
+  human_record = [];
+
+  for (var i = 0; i <= 20; ++i) {
+      human_record[i]={lastName:"Make"};
+      
+  }
+
+  return human_record;
+}
+
+    function genHuman(a,b,c,d,e,f){
+        lastName = b.toUpperCase();
+        firstName = a.toUpperCase();
+        age = c
+        orgin = d.toUpperCase();
+        favColor = e.toUpperCase();
+        favFood = f.toUpperCase();
+        
+        return;
+    }
+</script>
+</head>
+<body>
+
+<script>
+
+document.write(human_record[0].lastName)
+human_record[0] = genHuman("Makenna","Turner",14,"Colorado","Talcum Blue","Soup");
+document.write(human_record[0].lastName)
+/*
+var name = prompt("What is your name?");
+name = name.toUpperCase();
+var long = human_record.length
+for(var i = 0; i =< long; i++) {
+    if ((human_record[i].firstName == name)||(human_record[i].lastName == name)||(human_record[i].fullName == name)){
+        document.write('Welcome Home.')
+    }
+}
+*/
+</script>
+</body>
+<!--We want it so if the human record is = to null, then place info at that point -->
+</html>

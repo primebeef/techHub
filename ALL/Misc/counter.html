@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='basic_library.js'></script>
+    <thnk href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    
+<script>
+function minus1(){
+    var score = getText('team1');
+    score = parseInt(score);
+    score = score - 1;
+    setText('team1',score);
+}
+function plus1(){
+    var score = getText('team1');
+    score = parseInt(score);
+    score = score + 1;
+    setText('team1',score);
+}
+
+
+
+function minus2(){
+    var score = getText('team2');
+    score = parseInt(score);
+    score = score - 1;
+    setText('team2',score);
+}
+function plus2(){
+    var score = getText('team2');
+    score = parseInt(score);
+    score = score + 1;
+    setText('team2',score);
+}
+</script>
+<title></title>
+<style>
+html,body{
+    margin:0;
+    padding:0;
+}
+body{
+ background-color:#F8F6F3; 
+  font-family: 'Space Mono', monospace;   
+  color:#F8F6F3; 
+  font-size:45px;
+  text-align:center;
+}
+.counter{
+position:fixed;
+background-color:#53131E;
+width:49.5%;
+height:100%;
+}
+#c1{
+left:0%;
+}
+#c2{
+right:0%;
+}
+table{
+    position:relative;
+    width:100%;
+    font-size:30px;
+    list-style-type:none;
+    border-collapse:none;
+    color:#F8F6F3; 
+    cursor:pointer;
+    
+}
+.plus{
+width:50%;
+    height:75px;
+    text-align: center;
+    padding:50px;
+    font-size:50px;
+
+}
+.minus{
+width:50%;
+    height:75px;
+    text-align: center;
+    padding:50px;
+    font-size:70px;
+}
+</style>
+
+</head>
+
+<body>
+    <div class='counter' id='c1'>
+<h1 id='team1name'> </h1>
+    <table>
+        <th class='minus' onclick='minus1()'>-</th>
+        <th class='plus' onclick='plus1()'>+</th>
+    </table>
+<div id='team1'>0</div>
+</div>
+
+    <div class='counter' id='c2'>
+    <h1 id='team2name'> </h1>
+     <table>
+        <th class='minus' onclick='minus2()'>-</th>
+        <th class='plus' onclick='plus2()'>+</th>
+    </table>
+<div id='team2'>0</div>
+</div>
+
+
+<script>
+var team1 = prompt("Team 1's Team Name?");
+var team2 = prompt("Team 2's Team Name?");
+setText('team1name',team1);
+setText('team2name',team2);
+</script>
+</body>
+</html>

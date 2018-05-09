@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+  Advanced Web Programming 
+  Assignment: 
+  Name: 
+-->
+<title></title>
+<style>
+</style>
+</head>
+<body>
+    <script>
+        var speakid = [
+    "Davey Jones",
+    "Super Man",
+    "LJ Shearer",
+    "Jessica Jones",
+    "Jon Snow",
+    ]
+    </script>
+    <script>
+        function rand(){
+    var rand = Math.floor(Math.random() * (speakid.length));
+    return rand;
+}
+    </script>
+    <script>
+        function capNoun(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+    </script>
+<script>
+    var Dirx_Human = [
+    
+            [   
+                "MAKENNA_TURNER",
+                Name =
+                {
+                    first:"Makenna", last:"Turner",
+                    
+                },
+                Basic_Info =
+                {
+                BDate:"04/03/2002",     
+                },
+            ]
+            
+    
+        ]
+</script>
+<script>
+var LOCdatax = 0;
+var LOCdatay = 1;
+    function checkForID(a){
+        var i = 0
+        while(i <= Dirx_Human.length){
+    if(Dirx_Human[i][a] == speaker1){
+        var r = Dirx_Human[i][a]
+         LOCdatax = i
+    return r;
+         }
+    i++
+}
+    }
+    function checkForID0(item){
+        var i = 0
+        var quest = false
+        while((i <= Dirx_Human[LOCdatax].length)&&(quest == false)){
+    if(Dirx_Human[LOCdatax][LOCdatay]!= undefined){
+        quest= true
+        var r = ((Dirx_Human[LOCdatax][LOCdatay]+item))
+        alert(r)
+    return r;
+    break;
+         }
+         i++
+    LOCdatay++
+}
+    }
+</script>
+<script>
+document.write(Dirx_Human[0][0]);
+
+    var speaker = prompt("Hello, who am I speaking to?", speakid[rand()]);
+    speaker = speaker.toUpperCase();
+speaker1 = speaker.replace(/ +/g, "_");
+document.write(speaker1);
+ var check = checkForID(0);
+ var who = checkForID0(".first");
+ switch (speaker1){
+     case check:
+    alert("Welcome Home, " +who)
+         break;
+ }
+ /*
+ if(speaker1 == check){
+     alert("Equal")
+ }
+or(var i = 0; i <= Dirx_Human.length; i++){
+         if(Dirx_Human[i][0]==speaker1){
+        alert("Welcome back "+Dirx_Human[i])
+         }
+    
+}
+var i = 0;
+var check = null;
+while(i <= Dirx_Human.length){
+    if(Dirx_Human[i][0]==speaker1){
+        alert("Welcome back "+Dirx_Human[i])
+         }
+    i++
+}
+*/
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

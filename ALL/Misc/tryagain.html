@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+</style>
+</head>
+<body>
+    <script>
+        function GEN_recHuman(n,a){
+  n = [];
+
+  for (var i = 0; i <= a; ++i) {
+      n[i]={
+        lastName:null,
+        firstName:null,
+        age:null,
+        origin:null,
+        favColor:null,
+        favFood:null
+          
+      };
+      
+  }
+
+  return n;
+}
+    </script>
+    <!--Generation Variables -->
+    <script>
+        var humanRecord = GEN_recHuman("humanRecord",10);
+        
+    </script>
+<script>
+
+    function genHuman(a,b,c,d,e,f){
+        this.lastName = b.toUpperCase();
+        this.firstName = a.toUpperCase();
+        this.age = c
+        this.orgin = d.toUpperCase();
+        this.favColor = e.toUpperCase();
+        this.favFood = f.toUpperCase();
+        
+    
+        
+    }
+        
+</script>
+<script>
+document.write(humanRecord[0].lastName)
+    
+</script>
+</body>
+</html>
